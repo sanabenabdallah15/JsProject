@@ -34,8 +34,21 @@
 
      
        Order.addEventListener("click",function(){
-        alert("your order has been confirmed")
-       })
+       
+       if( Array.from(document.getElementsByClassName("product")).length>1 && somme()>0){
+            alert("your order has been confirmed")
+
+       }
+       else {
+        alert ("please choose an article")
+       }
+       
+      
+        
+      
+       
+      })
+       
    
     
     
@@ -45,6 +58,7 @@
             buttonPlus[i].addEventListener("click",function(){
             buttonPlus[i].previousElementSibling.innerHTML ++
             somme()
+            
         })
 
     }
@@ -66,7 +80,11 @@
         buutdelete[i].addEventListener("click",function(){
         pro[i].remove()
         somme()
+        console.log(pro[i],"test")
+       
+       
       })
+      
     }
 
 
@@ -74,7 +92,7 @@
       const priceValue=Array.from(document.getElementsByClassName("price"))
       const quant=Array.from(document.getElementsByClassName("quantity"))
       const tot=document.getElementById("Total")
-      console.log(tot.innerHTML,"helooo")
+      /*console.log(tot.innerHTML,"helooo")*/
         sum=0;
         for (let i=0;i<priceValue.length;i++){
         sum=sum+(priceValue[i].innerHTML*quant[i].innerHTML)
@@ -84,8 +102,10 @@
 
     }
       return  tot.innerHTML=sum
+     
        
     }
+    
 
   
     
