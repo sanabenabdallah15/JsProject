@@ -1,0 +1,82 @@
+body{
+    margin:10px,10px;
+
+
+}
+
+h1{
+    align-items: center; 
+    color:#29c74c;
+    font-size: 100px;
+}
+.product{
+    width:100%;
+    display: flex;
+   
+    
+    
+     
+}
+.pro{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.details{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left:10%;
+ 
+   
+  
+ 
+    
+
+}
+.but{
+    justify-content: space-between;
+    margin-left:10%;
+    padding: 10px;
+   
+    
+   
+}
+.btn-det{
+    margin-bottom: 10%;
+    
+  
+    
+
+}
+ 
+
+
+button{
+    font-size: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    
+   
+    
+
+    
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  .quantity{
+    display:inline-block;
+    margin-top: 0;
+    font-size: 35px;
+  }
+ .result{
+    font-size: 100px;
+  }
+  #Confirm{
+    margin-left: 50%;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+  }
